@@ -8,6 +8,9 @@
 RTF, HTML, PDF, `.pptx` и `.docx` в две колонки из Apache POI — в `poi-misc/`.
 Файлы под чужим расширением (книга под `.doc`, RTF под `.doc`, HTML и CSV под
 `.xls`) — в `misnamed/`, с ожидаемым результатом в `misnamed/README.md`.
+Сгенерированные фикстуры (книги, CSV и TXT во многих кодировках, `hostile-links.docx`,
+`server-log.txt`) — в `generated/`: их пишет `node tools/make-docs-index.mjs`, в репозиторий
+они не попадают.
 Отдать файлы с `Content-Disposition: attachment`, как порталы скачивания:
 `node tools/serve-attachment.mjs docs 8767`.
 

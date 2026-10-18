@@ -3,6 +3,13 @@
 Файлы для ручной проверки и автотестов (`test/doc.test.mjs` читает их по имени).
 Фикстуры `.doc` из Apache POI лежат отдельно — в `poi/`, со своими `LICENSE`,
 `NOTICE` и описанием каждого файла в `poi/README.md`.
+Таблицы `.xls`, `.xlsx` и `.ods` из Apache POI — в `poi-spreadsheet/`, тоже с
+`LICENSE`, `NOTICE` и описанием каждого файла в `poi-spreadsheet/README.md`.
+RTF, HTML, PDF, `.pptx` и `.docx` в две колонки из Apache POI — в `poi-misc/`.
+Файлы под чужим расширением (книга под `.doc`, RTF под `.doc`, HTML и CSV под
+`.xls`) — в `misnamed/`, с ожидаемым результатом в `misnamed/README.md`.
+Отдать файлы с `Content-Disposition: attachment`, как порталы скачивания:
+`node tools/serve-attachment.mjs docs 8767`.
 
 ## `.doc` в этом каталоге
 

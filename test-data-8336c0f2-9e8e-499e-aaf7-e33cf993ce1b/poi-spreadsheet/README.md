@@ -100,6 +100,7 @@
 | `clusterfuzz-testcase-minimized-POIHSSFFuzzer-4819588401201152.xls` | битый `.xls` от фаззера, листов нет | «Could not read the document» |
 | `clusterfuzz-testcase-minimized-POIHSSFFuzzer-5285517825277952.xls` | битый `.xls` от фаззера, 96 ячеек читаются | открывается |
 | `poc-xmlbomb-empty.xlsx` | «XML-бомба» в части книги | открывается, не зависает |
+| `27349-vlookupAcrossSheets.xls` | формула `VLOOKUP` с диапазоном на другом листе — SheetJS не может перевести её в текст | открывается, вкладок 2, в консоли расширения ошибок нет |
 
 ## Настоящие книги из интернета
 
